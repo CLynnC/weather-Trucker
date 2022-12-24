@@ -16,20 +16,31 @@
     <aside>
         <div id="search-side">Search for a City:</div>
         <br>
-		<form input-type="text" id="search-bar" value="enter your city..."><input type="text"></input>
-        <button class="search">Search</button></form>
+		<input type="text" id="search-bar" value="enter your city..." />
+        
+        <button id="search">Search</button>
         <br>
 		<div class="saved-cities"></div>
     </aside>
 
-    <div id="show-city"></div>
+    <main id="currentWeather">
+        <span id="current">
+            <h2 class="cityName"></h2><div class="today"></div><icon class="current"></icon>
+        </span>
+        <div class="content">
+            <div class="temp">Temp: </div>
+            <div class="wind">Wind: </div>
+            <div class="humidity">Humidity: </div>
+        </div>
+    </main>
+
 	<br>
-    <div id="5-day">5-Day Forcast:</div>
+    <div id="fiveDay">5-Day Forcast:</div>
 	<br>
         <div class="forecast"></div>
 </body>
 
-<footer> This site brought to you by Crystal Lynn M. &copy; 2022.
-
+<footer><p> This site brought to you by Crystal Lynn M. &copy; 2022.</p>
+	<script src="./assets/js/java.js"></script>
 </footer>
 </html>
