@@ -1,11 +1,14 @@
 var userInput = document.querySelector("#search-bar");
 
+var currentDate = document.querySelector(".today");
 
 var APIKey = "77424e25aab1562d1c6c462752230d46";
 
 
 document.getElementById("search").addEventListener('click', searchIng);
 
+var currentDate = dayjs();
+$('.today').text(dayjs().format('M/DD/YYYY'));
 
 
 
@@ -37,6 +40,8 @@ function searchIng(event) {
             console.log(data.main)
             console.log(data)
             console.log(cityName)
+
+    
            // console.log(data.main.temp)
         });
 }
