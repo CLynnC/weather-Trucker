@@ -22,6 +22,14 @@ h1 {
     align-items: center;
 }
 
+.cityName {
+    padding-right: 50px;
+}
+
+.today {
+    padding-right: 50px;
+}
+
 body {
     background-color: darkslateblue;
 }
@@ -52,17 +60,32 @@ button {
     margin-left: 2px;
 }
 
+#currentWeather {
+    display: flex;
+    width: 750px;
+    margin-left: 400px;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    background-color: darkblue;
+}
+
 #current {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
 #fiveDay {
+    display: flex;
     font-size: x-large;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 footer {

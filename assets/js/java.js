@@ -37,9 +37,17 @@ function searchIng(event) {
             let cityName = (data.name)
             var cityContainer = document.querySelector(".cityName");
             cityContainer.innerHTML = cityName, "";
-            console.log(data.main)
-            console.log(data)
+            let currentIcon = (data.weather[0].icon)
+            let image = document.createElement("img");
+                image.src = "http://openweathermap.org/img/wn/" + currentIcon + ".png";
+                image.width = 100;
+                image.height = 110;
+
+$('.condition').append(image);
+            //document.body.
+            //iconContainer.innerHTML = currentIcon;
             console.log(cityName)
+            console.log(data)
 
     
            // console.log(data.main.temp)
