@@ -80,6 +80,10 @@ button {
     flex-wrap: wrap;
 }
 
+span#content {
+   display: flex;
+}
+
 #fiveDay {
     display: flex;
     font-size: x-large;
