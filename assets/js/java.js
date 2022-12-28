@@ -10,7 +10,8 @@ document.getElementById("search").addEventListener('click', searchIng);
 var currentDate = dayjs();
 $('.today').text(dayjs().format('M/DD/YYYY'));
 
-//var img = document.querySelector(".condition",);
+//var icon = document.querySelector("#condition");
+//$('#condition').img.window.image.format(URL);
 
 
 
@@ -24,8 +25,7 @@ var userInput;
 
 
 
-function searchIng(event) {
-    event.preventDefault()
+function searchIng() {
     let userInput = 
     document.getElementById("search-bar").value;
     console.log(userInput);
@@ -38,12 +38,12 @@ function searchIng(event) {
             var cityContainer = document.querySelector(".cityName");
             cityContainer.innerHTML = cityName, "";
             
-            let currentIcon = (data.weather[0].icon)
             
-            var img = document.createElement("img");
-                img.src = ("http://openweathermap.org/img/wn/" + currentIcon + ".png");
-            var block = document.getElementById("condition");
-                block.appendChild(img);
+            let currentIcon = (data.weather[0].icon)
+            //var img = document.createElement("img");
+              //      img.setAttribute(URL, `http://openweathermap.org/img/wn/${currentIcon}.png`);
+                //const icon = document.getElementById("condition"); 
+                //icon.innerHTML.appendChild(img);
                         
                     
                 //if (block === img) {
@@ -53,13 +53,14 @@ function searchIng(event) {
                // }
             
                
-            //let img = document.createElement("img");
-            //img.src = `http://openweathermap.org/img/wn/${currentIcon}.png`;
-                //img.width = 100
-                //img.height = 110  
-            //var imageContainer = document.querySelector(".condition");
-            //imageContainer.innerHTML.append(img);
-            console.log(img);
+            window.image = document.createElement('img');
+                    image.src =("http://openweathermap.org/img/wn/" + currentIcon +".png");
+                    //image.width = 100
+                    //image.height = 110   
+            let imageContainer = $('#current').children().eq(2);
+
+            imageContainer.replaceWith(image);
+            console.log(window.image);
 
             let currentTemp = (data.main.temp)
             var tempContainer = document.querySelector(".temp");
@@ -74,4 +75,9 @@ function searchIng(event) {
         })
 }
 
+//function clearScreen(event) {
+    //event.preventDefault()
+    //    $(icon).children().remove(window.image)
+     //   searchIng();
+//}
 //document.getElementById('search').onclick = function searchIng(){}
