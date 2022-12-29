@@ -69,6 +69,7 @@ button {
     border-style: solid;
     border-color: black;
     padding: 20px;
+    padding-bottom: 40px;
     background-color: darkblue;
 }
 
@@ -90,6 +91,27 @@ span#content {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+section.forecast {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    background-color: rgb(91, 138, 249);
+    color:darkblue;
+    height: 266px;
+    width: 250px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer {
