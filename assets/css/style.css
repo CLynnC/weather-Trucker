@@ -93,7 +93,7 @@ span#content {
     flex-direction: column;
 }
 
-section.forecast {
+section#forecast {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
