@@ -17,12 +17,13 @@ var userInput;
 
 
 
-function searchIng() {
+
+function searchIng(event) {
     let userInput = 
     document.getElementById("search-bar").value;
     console.log(userInput);
     var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&appid=" + APIKey + "&units=imperial";
-    let forcastURL= "http://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&appid=" + APIKey + "&units=imperial";
+    
     fetch(queryURL)
         .then(response => response.json())
         .then(data => {
@@ -51,6 +52,7 @@ function searchIng() {
             var currentHumidityContainer = document.querySelector(".humidity");
                 currentHumidityContainer.innerHTML = "Humidity:  _ " + currentHumidity + " %";
         })
+        var forcastURL= "http://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&appid=" + APIKey + "&units=imperial";
     fetch(forcastURL)
         .then(response => response.json())
         .then(data => {
@@ -82,7 +84,7 @@ function searchIng() {
 
                 let forcast2Icon = (data.list[13].weather[0].icon)   
             window.image2 = document.createElement('img');
-                    image2.src =("http://openweathermap.org/img/wn/" + forcast1Icon +".png");
+                    image2.src =("http://openweathermap.org/img/wn/" + forcast2Icon +".png");
                     image2.widt_txth = 80
                     image2.height = 90   
             let image2Container = document.querySelector("#icon2");
@@ -171,7 +173,8 @@ function searchIng() {
             var humidityContainerFive = document.querySelector("#humidity5");
                 humidityContainerFive.innerHTML = "Humidity: _ " + humidity5 + " %";
             
-            //document.body.
+        localStorage.setItem("cityName", userInput);
+                //document.body.
             //iconContainer.innerHTML = currentIcon;
             
             console.log(data)
