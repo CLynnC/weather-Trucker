@@ -52,6 +52,7 @@ function searchIng(event) {
             var currentHumidityContainer = document.querySelector(".humidity");
                 currentHumidityContainer.innerHTML = "Humidity:  _ " + currentHumidity + " %";
         })
+        
         var forcastURL= "http://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&appid=" + APIKey + "&units=imperial";
     fetch(forcastURL)
         .then(response => response.json())
@@ -87,8 +88,10 @@ function searchIng(event) {
                     image2.src =("http://openweathermap.org/img/wn/" + forcast2Icon +".png");
                     image2.widt_txth = 80
                     image2.height = 90   
-            let image2Container = document.querySelector("#icon2");
+            let image2Container = $('#forecast').children().eq(2).children().eq(1);
             image2Container.replaceWith(image2);
+
+            console.log(image2);
                 
                 let temp2 = (data.list[13].main.temp)
                 var containerTwo = document.querySelector("#temp2");
@@ -110,7 +113,7 @@ function searchIng(event) {
                     image3.src =("http://openweathermap.org/img/wn/" + forcast3Icon +".png");
                     image3.widt_txth = 80
                     image3.height = 90   
-            let image3Container = document.querySelector("#icon3");
+            let image3Container = $("#forecast").children().eq(4).children().eq(1);
             image3Container.replaceWith(image3);
 
             let temp3 = (data.list[21].main.temp)
@@ -133,7 +136,7 @@ function searchIng(event) {
                     image4.src =("http://openweathermap.org/img/wn/" + forcast4Icon + ".png");
                     image4.widt_txth = 80
                     image4.height = 90   
-            let image4Container = document.querySelector('#icon4');
+            let image4Container = $('#forecast').children().eq(6).children().eq(1);
             image4Container.replaceWith(image4);
 
             console.log(window.image4);
@@ -158,7 +161,7 @@ function searchIng(event) {
                     image5.src =("http://openweathermap.org/img/wn/" + forcast5Icon +".png");
                     image5.widt_txth = 80
                     image5.height = 90   
-            let image5Container = document.querySelector("#icon5");
+            let image5Container = $("#forecast").children().eq(8).children().eq(1);
             image5Container.replaceWith(image5);
 
             let temp5 = (data.list[37].main.temp)
