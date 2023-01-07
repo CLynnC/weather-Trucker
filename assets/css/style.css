@@ -36,6 +36,10 @@ aside hr {
     color: rgb(106, 101, 138);
 }
 
+li {
+    display: block;
+}
+
 .cityName {
     padding-right: 50px;
 }
