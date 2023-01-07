@@ -22,6 +22,12 @@ The following is the repo-generated for the Challenge#6 Assignment.
 
 ![ScreenShot2](./assets/images/Screenshot%202023-01-06%20181028.png)
 
+
+## Deployment Links >>
+
+ -  https://clynnc.github.io/weather-Trucker/
+ -  https://github.com/CLynnC/weather-Trucker.git
+
 ## Features
   -  My Weather Dashboard contains a sleek and polished UI and UX look. It includes a searchbar with initial prompt text to search for a city...
   -  It also includes a search button and a list to the side to display all previously searched cities.
