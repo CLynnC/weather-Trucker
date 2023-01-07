@@ -46,7 +46,7 @@ function storage (event) {
 }
 
 function searchIng (searchCity) {
-  var queryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + searchCity + '&appid=' + APIKey + '&units=imperial'
+  var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + searchCity + '&appid=' + APIKey + '&units=imperial'
 
   fetch(queryURL)
     .then(response => response.json())
@@ -58,7 +58,7 @@ function searchIng (searchCity) {
 
       let currentIcon = (data.weather[0].icon)
       window.image = document.createElement('img')
-      image.src = ('http://openweathermap.org/img/wn/' + currentIcon + '.png')
+      image.src = ('https://openweathermap.org/img/wn/' + currentIcon + '.png')
       image.widt_txth = 80
       image.height = 90
       let imageContainer = $('#current').children().eq(2)
@@ -78,7 +78,7 @@ function searchIng (searchCity) {
       currentHumidityContainer.innerHTML = 'Humidity:  _ ' + currentHumidity + ' %'
     })
 
-  var forcastURL = 'http://api.openweathermap.org/data/2.5/forecast?q=' + searchCity + '&appid=' + APIKey + '&units=imperial'
+  var forcastURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' + searchCity + '&appid=' + APIKey + '&units=imperial'
   fetch(forcastURL)
     .then(response => response.json())
     .then(data => {
@@ -87,7 +87,7 @@ function searchIng (searchCity) {
 
       let forcast1Icon = (data.list[5].weather[0].icon)
       window.image1 = document.createElement('img')
-      image1.src = ('http://openweathermap.org/img/wn/' + forcast1Icon + '.png')
+      image1.src = ('https://openweathermap.org/img/wn/' + forcast1Icon + '.png')
       image1.widt_txth = 80
       image1.height = 90
       let image1Container = $('#forecast').children().eq(0).children().eq(1)
@@ -110,7 +110,7 @@ function searchIng (searchCity) {
 
       let forcast2Icon = (data.list[13].weather[0].icon)
       window.image2 = document.createElement('img')
-      image2.src = ('http://openweathermap.org/img/wn/' + forcast2Icon + '.png')
+      image2.src = ('https://openweathermap.org/img/wn/' + forcast2Icon + '.png')
       image2.widt_txth = 80
       image2.height = 90
       let image2Container = $('#forecast').children().eq(2).children().eq(1)
@@ -135,7 +135,7 @@ function searchIng (searchCity) {
 
       let forcast3Icon = (data.list[21].weather[0].icon)
       window.image3 = document.createElement('img')
-      image3.src = ('http://openweathermap.org/img/wn/' + forcast3Icon + '.png')
+      image3.src = ('https://openweathermap.org/img/wn/' + forcast3Icon + '.png')
       image3.widt_txth = 80
       image3.height = 90
       let image3Container = $('#forecast').children().eq(4).children().eq(1)
@@ -158,7 +158,7 @@ function searchIng (searchCity) {
 
       let forcast4Icon = (data.list[29].weather[0].icon)
       window.image4 = document.createElement('img')
-      image4.src = ('http://openweathermap.org/img/wn/' + forcast4Icon + '.png')
+      image4.src = ('https://openweathermap.org/img/wn/' + forcast4Icon + '.png')
       image4.widt_txth = 80
       image4.height = 90
       let image4Container = $('#forecast').children().eq(6).children().eq(1)
@@ -183,7 +183,7 @@ function searchIng (searchCity) {
 
       let forcast5Icon = (data.list[37].weather[0].icon)
       window.image5 = document.createElement('img')
-      image5.src = ('http://openweathermap.org/img/wn/' + forcast5Icon + '.png')
+      image5.src = ('https://openweathermap.org/img/wn/' + forcast5Icon + '.png')
       image5.widt_txth = 80
       image5.height = 90
       let image5Container = $('#forecast').children().eq(8).children().eq(1)
