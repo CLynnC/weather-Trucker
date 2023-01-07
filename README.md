@@ -18,24 +18,24 @@ The following is the repo-generated for the Challenge#6 Assignment.
     ✅ THEN I am again presented with current and future conditions for that city
 
 
-![ScreenShot1](https://{url})
+![ScreenShot1](./assets/images/Screenshot%202023-01-06%20180937.png)
 
-![ScreenShot2](https://{url})
+![ScreenShot2](./assets/images/Screenshot%202023-01-06%20181028.png)
 
 ## Features
-    My Weather Dashboard contains a sleek and polished UI and UX look. It includes a searchbar with initial prompt text to search for a city...
-    It also includes a search button and a list to the side to display all previously searched cities.
+  -  My Weather Dashboard contains a sleek and polished UI and UX look. It includes a searchbar with initial prompt text to search for a city...
+  -  It also includes a search button and a list to the side to display all previously searched cities.
 
     Note: I had to acquire the aid of a tutor in order to figure out the local storage out and set it up so that it would start the user out with input from local storage if there was any. And also so that it would be accessable to the user add this input to the page upon load.
 
-    It includes a main dashboard box with the city name in a heading format for easy viewing. The current tempature and an icon to demonstrate current weather conditions.
-    Along with this it displays the date between the city and the weather icon.
-    It includes a small section below that with the current temp, windspeed, and humidity.
-    Below this are 5 smaller boxes to display the same city's five-day forecast, as predicted through the data obtained via the web API used.
+  -  It includes a main dashboard box with the city name in a heading format for easy viewing. The current tempature and an icon to demonstrate current weather conditions.
+  -  Along with this it displays the date between the city and the weather icon.
+  -  It includes a small section below that with the current temp, windspeed, and humidity.
+  -  Below this are 5 smaller boxes to display the same city's five-day forecast, as predicted through the data obtained via the web API used.
 
-    For this project, we used the OpenWeatherAPI web api. https://openweathermap.org/
+  -  For this project, we used the OpenWeatherAPI web api. https://openweathermap.org/
 
-    It also features dynamic Javascripting with inputs to localStorage for city and weather details.
+  -  It also features dynamic Javascripting with inputs to localStorage for city and weather details.
 
 ## How to Contribute
 
